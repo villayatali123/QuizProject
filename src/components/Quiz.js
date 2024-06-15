@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import questions from "./questions.json";
+import questions from "../questions.json";
 
 const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(() => {
