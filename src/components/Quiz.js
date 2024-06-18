@@ -23,7 +23,7 @@ const Quiz = () => {
     return () => {
       document.removeEventListener("fullscreenchange", handleFullScreenChange);
     };
-  }, []);
+  });
 
   useEffect(() => {
     if (!isFullScreen) {
@@ -54,7 +54,7 @@ const Quiz = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   const handleFullScreenRequest = () => {
     if (!document.fullscreenElement) {
